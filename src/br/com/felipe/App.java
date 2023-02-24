@@ -9,8 +9,5 @@ public class App {
         
         System.out.println(cat);
 
-        /*int a = 10;
-        int b = 5;
-        System.out.println("Hello, World!" + (a+b));*/
     }
 }
