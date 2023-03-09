@@ -1,6 +1,6 @@
-package br.com.felipe;
+package br.com.felipe.primeiraaula;
 
-import br.com.felipe.model.Cat;
+import br.com.felipe.primeiraaula.newpackage.Cat;
 
 public class App {
     public static void main(String[] args) {

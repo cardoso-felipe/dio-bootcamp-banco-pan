@@ -1,4 +1,4 @@
-package br.com.felipe.model;
+package br.com.felipe.primeiraaula.newpackage;
 
 import java.util.Date;
 

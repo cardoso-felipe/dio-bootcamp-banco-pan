@@ -4,24 +4,25 @@ import java.util.Scanner;
 
 public class Calculadora {
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
+        //Scanner scan = new Scanner(System.in);
+        try (Scanner scan = new Scanner(System.in)) {
+            int a, b;
 
-        int a, b;
+            System.out.println("Digite o primeiro valor: ");
+            a = scan.nextInt();
+            System.out.println("Digite o segundo valor: ");
+            b = scan.nextInt();
 
-        System.out.println("Digite o primeiro valor: ");
-        a = scan.nextInt();
-        System.out.println("Digite o segundo valor: ");
-        b = scan.nextInt();
+            int soma = soma(a, b);
+            int subtracao = subtracao(a, b);
+            double divisao = divisao(a, b);
+            int multiplicacao = multiplicacao(a, b);
 
-        int soma = soma(a, b);
-        int subtracao = subtracao(a, b);
-        double divisao = divisao(a, b);
-        int multiplicacao = multiplicacao(a, b);
-
-        System.out.println("soma é " + soma);
-        System.out.println("subtração é " + subtracao);
-        System.out.println("divisão é " + divisao);
-        System.out.println("multiplicação é " + multiplicacao);
+            System.out.println("soma é " + soma);
+            System.out.println("subtração é " + subtracao);
+            System.out.println("divisão é " + divisao);
+            System.out.println("multiplicação é " + multiplicacao);
+        }
 
     }
 
